@@ -1,13 +1,22 @@
-# Xray iran for PaaS
-By https://github.com/sepehrpiton
+پروژه ساخت فیلترشکن شخصی با Xray
+این پروژه نسخه‌ای ویرایش و شخصی‌سازی شده بر اساس پروژه اصلی sepehrpiton/argo-pass است.
 
-## Project Features
+با این پروژه می‌تونی خیلی راحت برای خودت یک فیلترشکن شخصی با هسته قدرتمند Xray بسازی و اون رو روی سرویس‌های ابری رایگان (که بهشون PaaS میگن مثل Heroku, Koyeb, Render و...) اجرا کنی.
 
-* This project is used to deploy xray on any PaaS cloud service provider, and the solution adopted is Argo + Nginx + WebSocket + VMess/Vless/Trojan/Shadowsocks + TLS
-* The xray core file and configuration file have been "specially processed", each project is different, which greatly reduces the risk of being blocked and sitting continuously
-* The uuid of vmess and vless or the password of trojan and shadowsocks, the path can be customized or use the default value
-* Integrated Nezha probe, you can freely choose whether to install it
-* After the deployment is complete, if you find that you cannot access the Internet, please check whether the domain name is blocked. You can use the generated Argo node or Cloudflare CDN or worker to solve it.
+قابلیت‌های اصلی پروژه
+ترکیب فناوری‌های قدرتمند: این سیستم از یک ترکیب حرفه‌ای برای دور زدن فیلترینگ استفاده می‌کنه:
+
+Argo Tunnel کلودفلر: برای مخفی کردن IP اصلی سرور و پایداری بالا.
+وب‌سرور Nginx: برای مدیریت هوشمند ترافیک و ردگم‌کنی.
+پروتکل‌های متنوع: پشتیبانی کامل از پروتکل‌های محبوب Vmess, Vless, Trojan و Shadowsocks روی بستر امن WebSocket و TLS.
+امنیت در برابر شناسایی: کانفیگ و فایل‌های اصلی جوری تنظیم شدن که ریسک شناسایی و مسدود شدن سرور شما توسط فیلترینگ خیلی کمتر بشه.
+
+قابلیت شخصی‌سازی کامل: شناسه (UUID) و مسیرهای ارتباطی (Path) برای همه پروتکل‌ها کاملاً قابل تغییر و شخصی‌سازی هستن. اینطوری میتونی سرور خودت رو خاص و منحصر به فرد کنی.
+
+مانیتورینگ (اختیاری): اگه دوست داشته باشی، میتونی سیستم مانیتورینگ «Nezha» رو هم فعال کنی تا وضعیت منابع و مصرف سرورت رو همیشه زیر نظر داشته باشی.
+
+راهکار برای دامنه‌های فیلتر شده:
+نکته مهم: بعد از اینکه همه چیز رو ساختی، اگه دیدی به سرور وصل نمیشه، احتمالاً دامنه Argo Tunnel که بهت داده فیلتر شده. برای حل این مشکل خیلی راحت میتونی از یک Worker یا CDN کلودفلر استفاده کنی و به اصطلاح، یک دامنه تمیز برای خودت داشته باشی.
 
 ## deployment
 
