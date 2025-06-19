@@ -1,2 +1,0 @@
-# Xray-iran
-Xray iran
