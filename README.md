@@ -51,9 +51,3 @@ After the deployment is complete, if you find that you cannot access the Interne
 
 * This program is only for learning and understanding. For non-profit purposes, please delete it within 24 hours after downloading. It cannot be used for any commercial purposes. The text, data and pictures are copyrighted. If reproduced, the source must be indicated.
 * Use of this program is subject to the deployment disclaimer. The use of this program must comply with the laws and regulations of the location where the deployment server is located, the country where the user is located, and the country where the user is located. The program author is not responsible for any improper behavior of the user.
-
-## sponsorship
-
-Afdian: https://afdian.net/a/Misaka-blog
-
-![afdian-MisakaNo の Xiaopo Station](https://user-images.githubusercontent.com/122191366/211533469-351009fb-9ae8-4601-992a-abbf54665b68.jpg)
