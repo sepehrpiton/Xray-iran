@@ -11,7 +11,7 @@ sed -i "s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJ
 
 # Set nginx masquerade station
 rm -rf /usr/share/nginx/*
-wget https://gitlab.com/Misaka-blog/xray-paas/-/raw/main/mikutap.zip -O /usr/share/nginx/mikutap.zip
+wget https://github.com/sepehrpiton/Xray-iran/blob/main/xrayiran.zip -O /usr/share/nginx/mikutap.zip
 unzip -o "/usr/share/nginx/mikutap.zip" -d /usr/share/nginx/html
 rm -f /usr/share/nginx/mikutap.zip
 
